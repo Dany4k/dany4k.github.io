@@ -1,17 +1,8 @@
-/* https://newtodesing.com/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-
-
 /*Load google font*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
-
 /* Reset Styles */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -85,8 +77,12 @@ div , footer {
 /* Reset ends */
 
 
-/*Hero section*/
+body{
+	background: #0a192f;
+}
 
+
+/* Resume Start */
 .container {
 	max-width: 1100px;
 	height: auto;
@@ -102,6 +98,7 @@ h1.name {
 	font-size: 70px;
 	font-weight: 300;
 	display: inline-block;
+	color: white;
 }
 
 .job-title {
@@ -109,7 +106,7 @@ h1.name {
 	background-color: #D9E7F8;
 	color: #4A90E2;
 	font-weight: 600;
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-left: 20px;
 	border-radius: 5px;
 	display: inline-block;
@@ -120,21 +117,22 @@ h1.name {
 	display: block;
 	font-size: 24px;
 	font-weight: 300;
-	color: #81899C;
 	margin-top: 10px;
+	color: #64ffda;
 }
 
-.lead {
+.resume {
 	font-size: 44px;
-	font-weight: 300;
+	font-weight: 500;
 	margin-top: 60px;
 	line-height: 55px;
+	color: #8892b0;
 }
 
-/*hero ends*/
+/* Resume End */
 
-/*skills & intrests*/
 
+/* Skills & Interests Start */
 .sections {
 	vertical-align: top;
 	display: inline-block;
@@ -182,11 +180,9 @@ h1.name {
 	line-height: 22px;
 }
 
-/*skill and intrests ends*/
+/* Skills & Interests Start */
 
 /* Achievements */
-
-
 .cards {
 	max-width: 1120px;
 	display: block;
