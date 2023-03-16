@@ -4,11 +4,12 @@
 <head>
 	<title>Daniel Gonçalo - Front End Developer</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <body>
+	<script type="text/javascript" src="/myscript.js"></script>
 	<div class="container1">
 		<p class="nav"><a href="#contact"><span class="numbered_nav">05.</span>Contact Me</a></p>
 		<p class="nav"><a href="#experiences"><span class="numbered_nav">04.</span>Experiences</a></p>
@@ -63,7 +64,6 @@
 	</div>
 
 	<!-- Achievements -->
-
 	<div class="container cards" id="projects">
 		<h2 class="section-title"><span class="numbered">03.</span>Some things I have worked on</h2>
 		<div class="card">
@@ -76,7 +76,7 @@
 				<span>Building a Portal using the Prestashop framework with HTML and CSS.</span>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card" onclick="myFunction1()" style="cursor: pointer;">
 			<div class="skill-level">
 				<img src="images\idtraining.jpg" alt="website-image-idtraining" class="website-image">
 			</div>
@@ -87,7 +87,7 @@
 						href="https://www.idtraining.pt/" target="_blank">website</a>.</span>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card" onclick="myFunction2()" style="cursor: pointer;">
 			<div class="skill-level">
 				<img src="images\ip.jpg" alt="website-image-ip" class="website-image">
 			</div>
@@ -101,7 +101,7 @@
 						href="https://servicos.infraestruturasdeportugal.pt/" target="_blank">IPS</a>).</span>
 			</div>
 		</div>
-		<div class="card">
+		<div class="card" onclick="myFunction3()" style="cursor: pointer;">
 			<div class="skill-level">
 				<img src="images\pwc.jpg" alt="website-image-pwc" class="website-image">
 			</div>
@@ -172,7 +172,7 @@
 	<div class="container  mt-10 container-contact" id="contact">
 		<p class="section-title line"><span class="numbered">05.</span>Get in Touch</p>
 		<p class="resume2">Currently looking for new opportunities, my inbox is always open!</p>
-		<p class="resume2">You can contact me by email or through Linkedin.</p>
+		<p class="resume2">You can contact me by <a href="mailto: dany4k@gmail.com" style="color:#64ffda;">email</a> or through <a href="https://www.linkedin.com/in/daniel-gonçalo/" style="color:#64ffda;">Linkedin</a>.</p>
 		<span class="job-title"><a href="\attachments/Daniel Gonçalo CV 2022.pdf"
 				download="Daniel Gonçalo CV 2022.pdf">Download Resume</a></span>
 	</div>
@@ -185,7 +185,5 @@
 			href="https://www.linkedin.com/in/daniel-gonçalo/"> <span style="font-size: 15px;" color: #64ffda;>Daniel
 				Gonçalo</span></a></span>
 	</footer>
-
 </body>
-
 </html>
