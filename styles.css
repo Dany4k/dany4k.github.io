@@ -193,7 +193,14 @@ body {
 
 a:link    { text-decoration: none; }
 
+
+
 /* Resume Start */
+
+.container-mobile{
+	visibility: hidden;
+	display: none;
+}
 
 .container1{
 	max-width: 90%;
@@ -442,6 +449,13 @@ h1.name {
 
 /* Timeline styles*/
 
+.description-mobile{
+	font-size: 20px;
+    font-weight: 500;
+    margin-top: 1em;
+    line-height: 25px;
+    color: #8892b0;
+}
 
 ol {
 	position: relative;
@@ -477,6 +491,11 @@ ol::after {
 }
 
 /* ---- Timeline elements ---- */
+.mobile-font{
+	font-family: 'Sono', sans-serif;
+	color: #64ffda;
+}
+
 li {
 	position: relative;
 	display: inline-block;
@@ -564,10 +583,23 @@ li .description {
 
 /* Media queries*/
 
+@media (max-width: 1072px){
+	.card, .sections {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		float: left;
+	}
+}
+
 @media(max-width: 1024px) {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
+	}
+
+	.container-contact{
+		margin-top: 10%;
 	}
 
 	.cards {
@@ -579,6 +611,21 @@ li .description {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
+	}
+
+	.container-mobile{
+		display: block !important;
+		visibility: visible;
+		padding: 15px;
+		margin-top: 127%;
+	}
+
+	.div-no-mobile {
+		display:none
+	}
+
+	.container-contact {
+		margin-top: 5%;
 	}
 
 	.cards {
@@ -619,6 +666,11 @@ li .description {
 		font-size: 40px;
 	}
 
+	.skill-level{
+		margin-left: 33%;
+	}
+
+
 	.card,
 	.sections {
 		width: 100%;
@@ -652,6 +704,14 @@ li .description {
 	footer {
 		margin-top: 2050px;
 	}
+
+	.container-mobile{
+		display: block !important;
+		visibility: visible;
+		padding: 15px;
+		margin-top: 127%;
+	}
+
 }
 
 
