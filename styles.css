@@ -189,6 +189,7 @@ footer {
 body {
 	background: #0a192f;
 	animation: fadeInAnimation ease 3s;
+	background-image: linear-gradient(#0a192f, #193c70);
 }
 
 a:link    { text-decoration: none; }
