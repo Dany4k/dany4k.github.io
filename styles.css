@@ -559,11 +559,18 @@ li .description {
 	font-weight: 600;
 	line-height: 25px;
 	color: #5B6A9A;
+
 }
 
 li .description:hover {
-	text-shadow: 0 0 1em #FEFEFE;
+	/* text-shadow: 0 0 1em #FEFEFE; */
 	cursor: default;
+	color: white;
+	border: 1px solid #64ffda;
+	border-radius: 5px;
+	padding: 5px;
+	transition: 0.5s;
+
 }
 
 .description::before {
@@ -599,6 +606,27 @@ li .description {
 }
 
 /*timeline ends*/
+
+.cv-button {
+	border: none;
+	max-height: 90px;
+	width: 250px;
+	vertical-align: top;
+    background-color: #D9E7F8;
+    color: #4A90E2;
+    font-weight: 600;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-family: 'Sono', sans-serif;
+	font-size: 17px;
+}
+
+.download-link{
+	display: block;
+	width: 100%;
+}
 
 /* footer */
 .icon-color{
