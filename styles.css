@@ -530,6 +530,10 @@ ol::after {
   color: #64ffda;
 }
 
+.company-name {
+  color: #fff;
+}
+
 li {
   position: relative;
   display: inline-block;
