@@ -1,2 +1,2 @@
 # dany4k.github.io
-Personal Portfolio
+This page is my personal Front End Developer portfolio.
