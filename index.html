@@ -1,240 +1,354 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<script src="https://kit.fontawesome.com/bb14550322.js" crossorigin="anonymous"></script>
-	<title>Daniel Gonçalo - Front End Developer</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Gonçalo — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div> 
-	<script type="text/javascript" src="/myscript.js"></script>
-	<div class="container1">
-		<p class="nav"><a href="#contact"><span class="numbered_nav">05.</span>Contact Me</a></p>
-		<p class="nav"><a href="#experiences"><span class="numbered_nav">04.</span>Experiences</a></p>
-		<p class="nav"><a href="#projects"><span class="numbered_nav">03.</span>Projects</a></p>
-		<p class="nav"><a href="#skills"><span class="numbered_nav">02.</span>Skills</a></p>
-		<p class="nav"><a href="#about-me"><span class="numbered_nav">01.</span>About me</a></p>
-	</div>
 
-	<div class="container">
-		<div class="hero">
-			<h1 class="name"><strong>Daniel Gonçalo</strong></h1>
-			<span class="job-title">Front-End Developer</span>
-			<span class="email">dany4k@gmail.com</span>
-		</div>
-	</div>
+  <!-- Progress Bar -->
+  <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar"></div></div>
 
-	<div class="container about-me-container" id="about-me">
-		<div class="hero">
-			<h2 class="section-title"><span class="numbered"><i class="fa-solid fa-address-card"></i>
-					01.</span>About Me </h2>
-			<img src="images/profile-pic.jpg" class="profile-picture animate__fadeInDownBig" alt="profile-picture">
-			<p class="resume2">Hello! My name is Daniel and I am a software engineer with a big focus on Front End
-				Development.</p>
-			<p class="resume2">I have over 5 years of front-end development working with HTML, CSS and Javascript.
-				This
-				includes frameworks like
-				Wordpress, Drupal, Prestashop, Blazor, Microsoft Power Pages and Angular. I have also done some
-				small
-				projects in Android Studio, MS Power Automate
-				and MS Power BI.
-			</p>
-			<p class="resume2"> During these years I have worked for smaller startups, state owned companies like IP
-				(Infraestruturas de Portugal) and big consultant
-				companies like PwC (PricewaterhouseCoopers) building websites, portals and various web applications.
-			</p>
-			<p class="resume2"> My most recent work experience was as a Front-End Developer and WordPress Specialist at 
-				SPMS (Serviços Partilhados do Ministério da Saúde). I worked with HTML, CSS, JavaScript, PHP, and the WordPress 
-				framework. My daily activities included adding new features to websites, fixing bugs, providing customer 
-				support to all SNS entities and conducting training sessions for these entities.
-			</p>
-		</div>
-	</div>
-	<!-- Skills and languages -->
-	<img src="images/programing.gif" class="gif" alt="man-programming">
-	<div class="container been-animated" id="skills">
-		<div class="sections">
-			<h2 class="section-title"><span class="numbered"><i class="fa-solid fa-gear"></i> 02.</span>Skills</h2>
-			<div class="list-card">
-				<div>
-					<h3><i class="fa-solid fa-laptop-code"></i> Programming Languages</h3>
-					<p class="description_languages">HTML, CSS, PHP, Javascript, Typescript, SQL</p>
-				</div>
-			</div>
-			<div class="list-card">
-				<div>
-					<h3><i class="fa-solid fa-database"></i> Frameworks and Libraries</h3>
-					<p class="description_languages">Wordpress, Drupal, Prestashop, React, Bootstrap, Hugo, Jekyll</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- Nav -->
+  <nav class="nav">
+    <span class="nav-logo">DG</span>
+    <ul class="nav-links">
+      <li><a href="#about">01. About</a></li>
+      <li><a href="#skills">02. Skills</a></li>
+      <li><a href="#projects">03. Work</a></li>
+      <li><a href="#experience">04. Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-	<!-- Achievements -->
-	<div class="container cards" id="projects">
-		<h2 class="section-title"><span class="numbered"><i class="fa-solid fa-wrench"></i> 03.</span>Some things I have
-			worked on</h2>
-		<div class="card">
-			<div class="skill-level">
-				<img src="images\prestashop.jpg" alt="website-image-prestashop" class="website-image">
-			</div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">01. About</a>
+    <a href="#skills" class="mob-link">02. Skills</a>
+    <a href="#projects" class="mob-link">03. Work</a>
+    <a href="#experience" class="mob-link">04. Experience</a>
+    <a href="#contact" class="mob-link">05. Contact</a>
+  </div>
 
-			<div class="skill-meta">
-				<h3>Portal Mestre de Obras</h3>
-				<span>Building a Portal using the Prestashop framework with HTML and CSS.</span>
-			</div>
-		</div>
-		<div class="card" onclick="myFunction1()" style="cursor: pointer;">
-			<div class="skill-level">
-				<img src="images\idtraining.jpg" alt="website-image-idtraining" class="website-image">
-			</div>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Open to new opportunities</p>
+      <h1 class="hero-name">
+        <span class="hero-name-first">Daniel</span>
+        <span class="hero-name-last">Gonçalo</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="hero-title">Front-End Developer</span>
+      </div>
+      <p class="hero-sub">8+ years building performant, accessible web experiences — from pixel-perfect UI to full CMS architecture.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-			<div class="skill-meta">
-				<h3>ID Training Wordpress Website</h3>
-				<span>Theme Instalation and Setup, Customization, Plugin Setup and SEO Optimization for the company <a
-						href="https://www.idtraining.pt/" target="_blank">website</a>.</span>
-			</div>
-		</div>
-		<div class="card" onclick="myFunction2()" style="cursor: pointer;">
-			<div class="skill-level">
-				<img src="images\ip.jpg" alt="website-image-ip" class="website-image">
-			</div>
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-frame">
+            <img src="images/profile-pic.jpg" alt="Daniel Gonçalo" class="about-img">
+          </div>
+          <div class="about-img-deco"></div>
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm Daniel — a Front-End Developer with <strong>8+ years of experience</strong> turning complex requirements into clean, fast, and accessible web products. I care deeply about code quality, user experience, and the details that make the difference.</p>
+          <p>My stack spans <strong>HTML, CSS, JavaScript, TypeScript, PHP</strong> and a wide range of frameworks — WordPress, Drupal, Angular, React, Hugo, Jekyll, and Blazor. I'm equally comfortable leading a CMS migration, building custom plugins, integrating with Power Platform, or pushing pixels until they're perfect.</p>
+          <p>I hold a <strong>Degree in Computer Science Engineering</strong> from Universidade Autónoma de Lisboa and have delivered projects for startups, state-owned institutions like <strong>Infraestruturas de Portugal</strong>, the <strong>Ministry of Health (SPMS)</strong>, and global consulting firm <strong>PwC Portugal</strong>. At PwC I was even <strong>awarded</strong> for an innovative onboarding app I helped build.</p>
+          <p>I'm currently <strong>available for new opportunities</strong> — whether that's a full-time role, a long-term contract, or a challenging freelance project.</p>
+          <a href="/attachments/CV_Daniel_Goncalo_2026.pdf" download="CV_Daniel_Goncalo_2026.pdf" class="btn-primary mt-2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<div class="skill-meta">
-				<h3>Infraestruturas de Portugal</h3>
-				<span>Front End Development working on Drupal framework, coding in HTML, CSS and JSS for 4 websites (<a
-						href="https://www.infraestruturasdeportugal.pt/" target="_blank">IP</a>, <a
-						href="https://www.ippatrimonio.pt/" target="_blank">IPP</a>, <a
-						href="https://www.ipengenharia.pt/" target="_blank">IPE</a> e <a
-						href="https://servicos.infraestruturasdeportugal.pt/" target="_blank">IPS</a>).</span>
-			</div>
-		</div>
-		<div class="card" onclick="myFunction3()" style="cursor: pointer;">
-			<div class="skill-level">
-				<img src="images\pwc.jpg" alt="website-image-pwc" class="website-image">
-			</div>
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <ul class="skill-tags">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>SQL</li><li>SASS</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Frameworks & Libraries</h3>
+          <ul class="skill-tags">
+            <li>WordPress</li><li>Drupal 8/9</li><li>Angular</li><li>React</li><li>Bootstrap</li><li>jQuery</li><li>Hugo</li><li>Jekyll</li><li>Blazor</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <h3>Tools & Platforms</h3>
+          <ul class="skill-tags">
+            <li>Git</li><li>Figma</li><li>Photoshop</li><li>cPanel</li><li>PrestaShop</li><li>Power Apps</li><li>Power BI</li><li>Power Automate</li><li>Android Studio</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<div class="skill-meta">
-				<h3>PwC Portugal</h3>
-				<span>Worked on several external client projects and <a href="https://blueeconomybarometer.pwc.pt/"
-						target="_blank">internal projects</a>. HTML/CSS/JS coding for integration with Blazor Web Apps,
-					Microsoft Power Apps and PowerBI.</span>
-			</div>
-		</div>
-	</div>
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+      <div class="projects-grid">
 
-	<!-- Job Timeline -->
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/prestashop.jpg" alt="Portal Mestre de Obras" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">PrestaShop · HTML · CSS</span>
+            <h3 class="project-name">Portal Mestre de Obras</h3>
+            <p class="project-desc">E-commerce portal built on PrestaShop with fully custom HTML and CSS theming.</p>
+          </div>
+        </article>
 
-	<div class="container div-no-mobile" id="experiences">
-		<p class="section-title line"><span class="numbered"><i class="fa-solid fa-briefcase"></i> 04.</span>Job
-			Experiences</p>
-		<ol class="timeline">
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Front End Developer @Portal Mestre de Obras
-				</p>
-				<span class="date">2017 - 2018</span>
-			</li>
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Front End Developer and Website Manager @ID Training
-				</p>
-				<span class="date">Jan. 2018 - Dez. 2020</span>
-			</li>
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Front End Developer <a href="https://www.infraestruturasdeportugal.pt/" target="_blank">@Infraestruturas de Portugal</a>
-				</p>
-				<span class="date">Jan. 2021 - Jul. 2021</span>
-			</li>
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Front End Analyst <a href="https://www.pwc.pt/" target="_blank">@PwC Portugal</a>
-				</p>
-				<span class="date">Aug. 2021 - Jan. 2023</span>
-			</li>
-		</ol>
-	</div>
-	<div class="container div-no-mobile mt-150" id="experiences">
-		<ol class="timeline">
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Front End Developer <a href="https://www.spms.min-saude.pt/" target="_blank">@Serviços Partilhados do Ministério da Saúde</a>
-				</p>
-				<span class="date">Jul. 2023 - Jan. 2025</span>
-			</li>
-			<li>
-				<span class="point"></span>
-				<p class="description">
-					Web Developer <a href="https://teamdev.com/" target="_blank">@TeamDev</a>
+        <article class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/idtraining.jpg" alt="ID Training" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">WordPress · SEO</span>
+            <h3 class="project-name">ID Training</h3>
+            <p class="project-desc">Theme customization, plugin setup and SEO optimization for the training company's website.</p>
+            <a href="https://www.idtraining.pt/" target="_blank" class="project-link">
+              Visit site
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
 
-				</p>
-				<span class="date">Feb. 2025 - Currently</span>
-			</li>
-		</ol>
-	</div>
+        <article class="project-card project-card--wide">
+          <div class="project-img-wrap">
+            <img src="images/ip.jpg" alt="Infraestruturas de Portugal" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Drupal · HTML · CSS · JS</span>
+            <h3 class="project-name">Infraestruturas de Portugal</h3>
+            <p class="project-desc">Front-end development across 4 institutional websites (IP, IPP, IPE, IPS) on the Drupal framework.</p>
+            <div class="project-links-row">
+              <a href="https://www.infraestruturasdeportugal.pt/" target="_blank" class="project-link">IP</a>
+              <a href="https://www.ippatrimonio.pt/" target="_blank" class="project-link">IPP</a>
+              <a href="https://www.ipengenharia.pt/" target="_blank" class="project-link">IPE</a>
+              <a href="https://servicos.infraestruturasdeportugal.pt/" target="_blank" class="project-link">IPS</a>
+            </div>
+          </div>
+        </article>
 
-	<!-- Mobile Timeline -->
-	<div class="container-mobile" id="experiences">
-		<p class="section-title line"><span class="numbered"><i class="fa-solid fa-briefcase"></i> 04.</span>Job
-			Experiences</p>
-		<p class="description-mobile">
-			<span class="mobile-font">2017 - 2018</span> - Front End Developer <span class="company-name">@Portal Mestre de Obras</span>
-		</p>
-		<p class="description-mobile">
-			<span class="mobile-font">Jan. 2018 - Dez. 2020</span> - Front End Developer and Website Manager <span class="company-name">@ID
-				Training</span>
-		</p>
-		<p class="description-mobile">
-			<span class="mobile-font">Jan. 2021 - Jul. 2021</span> - Front End Developer <span class="company-name">@Infraestruturas de Portugal</span>
-		</p>
-		<p class="description-mobile">
-			<span class="mobile-font">Aug. 2021 - Jan. 2023</span> - Front End Analyst <span class="company-name">@PwC Portugal</span>
-		</p>
-		<p class="description-mobile">
-			<span class="mobile-font">Jul. 2023 - Jan. 2025</span> - Front End Analyst <span class="company-name">@Serviços Partilhados do Ministério da Saúde</span>
-		</p>
-		<p class="description-mobile">
-			<span class="mobile-font">Feb. 2025 - Currently</span> - Web Developer <span class="company-name">@TeamDev</span>
-		</p>
-		
-	</div>
-
-	<!-- Contact -->
-	<div class="container  mt-10 container-contact" id="contact">
-		<p class="section-title line"><span class="numbered"><i class="fa-solid fa-phone"></i> 05.</span>Get in Touch</p>
-		<p class="resume2">You can contact me by <a href="mailto: dany4k@gmail.com" style="color:#64ffda;">email</a> or
-			through <a href="https://www.linkedin.com/in/daniel-goncalo/" target="_blank" style="color:#64ffda;">Linkedin</a>.</p>
-		<button class="cv-button"><a href="\attachments/CV Daniel Gonçalo.pdf"
-			download="CV_Daniel_Goncalo_2025.pdf"><i class="fa-solid fa-circle-down"></i>Download Resume</a></button>
-	</div>
-
-
-	<br><br>
-
-	<footer class="container">
-		<a href="mailto: dany4k@gmail.com"><i class="fa-solid fa-envelope icon-color mr-2"></a></i><a
-			href="https://www.linkedin.com/in/daniel-gonçalo/" target="_blank"><i
-				class="fa-brands fa-linkedin-in icon-color mr-2"></a></i><a href="https://github.com/Dany4k" ><i
-				class="fa-brands fa-github icon-color"></i></a>
-		<br>
-		<a
-			href="https://www.linkedin.com/in/daniel-gonçalo/" target="_blank"><span style="font-size: 16px; color:#8892b0; margin-top: 1%;">Coded by</span>  <span style="font-size: 15px;" color: #64ffda;>Daniel
-				Gonçalo</span></span>
+        <article class="project-card project-card--wide">
+          <div class="project-img-wrap">
+            <img src="images/pwc.jpg" alt="PwC Portugal" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Blazor · Power Apps · PowerBI</span>
+            <h3 class="project-name">PwC Portugal</h3>
+            <p class="project-desc">Multiple client and internal projects including HTML/CSS/JS integration with Blazor Web Apps and Microsoft Power platform.</p>
+            <a href="https://blueeconomybarometer.pwc.pt/" target="_blank" class="project-link">
+              Blue Economy Barometer
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+		<article class="project-card project-card--wide">
+		  <div class="project-img-wrap">
+			<img src="images/spms.jpg" alt="SPMS – SNS" class="project-img">
+			<div class="project-overlay"></div>
+		  </div>
+		  <div class="project-info">
+			<span class="project-tag">WordPress · PHP · WCAG · CSS · JS</span>
+			<h3 class="project-name">SPMS – Ministério da Saúde</h3>
+			<p class="project-desc">Built and maintained WordPress sites for Portugal's National Health Service entities. Delivered custom templates, plugin development, WCAG accessibility compliance, security hardening, and hands-on training for SNS staff.</p>
+			<a href="https://www.sns.gov.pt/" target="_blank" class="project-link">
+			Visit site
+			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
 			</a>
-	</footer>
+		  </div>
+		</article>
+        <article class="project-card project-card--wide">
+          <div class="project-img-wrap">
+            <img src="images/teamdev.png" alt="TeamDev" class="project-img">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Hugo · Jekyll · HTML · CSS · JS</span>
+            <h3 class="project-name">TeamDev</h3>
+            <p class="project-desc">Developed and maintained static websites for a software company specialising in cross-desktop and enterprise solutions. Delivered new features, refactored legacy code, and collaborated via Git on responsive, accessible builds.</p>
+            <a href="https://teamdev.com/" target="_blank" class="project-link">
+              Visit site
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section exp-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2017 – 2018</span>
+            <h3 class="tl-role">Front-End Developer</h3>
+            <p class="tl-company">Portal Mestre de Obras</p>
+            <p class="tl-detail">Built an e-commerce portal on PrestaShop with custom HTML/CSS theming, domain setup, payment integration (PayPal), and SEO optimisation.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2018 – 2020</span>
+            <h3 class="tl-role">Front-End Developer & Website Manager</h3>
+            <p class="tl-company">ID Training</p>
+            <p class="tl-detail">Owned the full WordPress lifecycle — theme customisation, plugin management (LiveChat, Mailchimp, Google Maps), multilingual support (EN/PT), and ongoing SEO improvements.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2021</span>
+            <h3 class="tl-role">Front-End Developer</h3>
+            <p class="tl-company"><a href="https://www.infraestruturasdeportugal.pt/" target="_blank">Infraestruturas de Portugal</a> <span class="tl-via">via Future-Compta</span></p>
+            <p class="tl-detail">Led the Drupal 8/9 migration of 5 institutional websites (IP, IPE, IPP, IPS, Portugal Tolls). Coordinated with design (Figma) and front-end teams on HTML/CSS/JS, responsive theming and content management.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">Aug. 2021 – Jan. 2023</span>
+            <h3 class="tl-role">Front-End Analyst</h3>
+            <p class="tl-company"><a href="https://www.pwc.pt/" target="_blank">PwC Portugal</a></p>
+            <p class="tl-detail">Delivered multiple client and internal projects — integrating HTML/CSS/JS with Blazor, Power Apps and PowerBI. Co-created an award-winning employee onboarding app built with React and Blazor (C#).</p>
+            <span class="tl-award">🏆 Internal Innovation Award</span>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023 – 2024</span>
+            <h3 class="tl-role">Front-End Developer & WordPress Specialist</h3>
+            <p class="tl-company"><a href="https://www.spms.min-saude.pt/" target="_blank">SPMS – Ministério da Saúde</a> <span class="tl-via">via Watermellon Tecnologias</span></p>
+            <p class="tl-detail">Built and maintained WordPress sites for Portugal's National Health Service entities — custom templates, plugin development, WCAG accessibility compliance, security hardening, and hands-on training for SNS staff.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2025 – 2026</span>
+            <h3 class="tl-role">Web Developer</h3>
+            <p class="tl-company"><a href="https://teamdev.com/" target="_blank">TeamDev</a></p>
+            <p class="tl-detail">Developed and maintained static websites with Hugo and Jekyll. Delivered new features in HTML/CSS/JS, refactored legacy codebases, and enforced code quality through Git-based reviews and collaborative deployments.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <p class="contact-sub">I'm actively looking for my next challenge — a front-end or full-stack role where I can build great products and grow with a strong team. If you think we'd be a good fit, I'd love to hear from you.</p>
+        <div class="contact-actions">
+          <a href="mailto:dany4k@gmail.com" class="btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            dany4k@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-goncalo/" target="_blank" class="btn-ghost">
+            LinkedIn →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">Designed & built by Daniel Gonçalo</span>
+      <div class="footer-links">
+        <a href="mailto:dany4k@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-goncalo/" target="_blank" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/Dany4k" target="_blank" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
