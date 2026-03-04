@@ -197,6 +197,11 @@ strong { font-weight: 600; color: var(--white); }
   border: 1px solid var(--border);
   transition: var(--transition);
 }
+
+.btn-ghost-linkedin {
+  background-color: #0A66C2;
+}
+
 .btn-ghost:hover {
   border-color: var(--text-muted);
   color: var(--white);
