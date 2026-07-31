@@ -432,6 +432,49 @@ strong { font-weight: 600; color: var(--white); }
 }
 .about-text p:last-of-type { margin-bottom: 0; }
 
+/* ── Languages (About) ──────────────────── */
+.lang-row {
+  margin: 28px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.lang-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.lang-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.lang-tags li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+.lang-tags li:hover {
+  background: rgba(232,255,77,0.1);
+  border-color: rgba(232,255,77,0.4);
+  color: var(--accent);
+}
+.lang-level {
+  opacity: 0.55;
+  font-size: 0.65rem;
+}
+
 /* ── Skills ─────────────────────────────── */
 .skills-section { background: var(--bg); }
 
